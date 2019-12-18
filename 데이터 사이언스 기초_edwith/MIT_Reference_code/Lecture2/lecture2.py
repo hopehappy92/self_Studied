@@ -107,10 +107,10 @@ def buildLargeMenu(numItems, maxVal, maxCost):
                           random.randint(1, maxCost)))
     return items
 
-#for numItems in (5, 10, 15, 20, 25, 30, 35, 40, 45):
+# for numItems in (5, 10, 15, 20, 25, 30, 35, 40, 45):
 #    print('Try a menu with', numItems, 'items')
 #    items = buildLargeMenu(numItems, 90, 250)
-#    testMaxVal(items, 750, False)  
+#    testMaxVal(items, 750, False)
 
 def fib(n):
     if n == 0 or n == 1:
@@ -177,6 +177,6 @@ def testMaxVal(foods, maxUnits, algorithm, printItems = True):
         for item in taken:
             print('   ', item)
           
-#for numItems in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50):
-#    items = buildLargeMenu(numItems, 90, 250)
-#    testMaxVal(items, 750, fastMaxVal, True)
+for numItems in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50):
+   items = buildLargeMenu(numItems, 90, 250)
+   testMaxVal(items, 750, fastMaxVal, True)
